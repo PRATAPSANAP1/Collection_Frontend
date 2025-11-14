@@ -1,0 +1,12 @@
+{
+  "name": "shubhangi-collection-frontend",
+  "version": "1.0.0",
+  "description": "Shubhangi Collection Frontend",
+  "main": "index.html",
+  "scripts": {
+    "build": "echo 'Static site - no build needed'",
+    "start": "echo 'Static site deployed'"
+  },
+  "author": "",
+  "license": "ISC"
+}
