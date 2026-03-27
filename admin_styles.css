@@ -6,17 +6,17 @@
 
 /* --- Global Styles & Variables (Deeper Dark Theme) --- */
 :root {
-  --bg-color-dark: #12121e;
+  --bg-color-dark: #0D0D0D;
   /* Deep, almost black background */
-  --card-color-dark: rgba(25, 25, 40, 0.6);
+  --card-color-dark: rgba(255, 255, 255, 0.05);
   /* Semi-transparent dark for glassmorphism */
-  --text-color-light: #e0e0e0;
+  --text-color-light: #F5F0E8;
   /* Light text for readability */
-  --primary-accent: #ff9900;
-  /* Vibrant orange for primary actions */
-  --secondary-accent: #ff5722;
-  /* A deeper orange/red for accents */
-  --border-light: rgba(255, 255, 255, 0.1);
+  --primary-accent: #D4A853;
+  /* Vibrant gold for primary actions */
+  --secondary-accent: #E8C97A;
+  /* A lighter gold for accents */
+  --border-light: rgba(212, 168, 83, 0.2);
   /* Subtle white border for glassmorphism effect */
   --box-shadow-dark: 0 10px 40px 0 rgba(0, 0, 0, 0.5);
   /* Stronger shadow for depth */

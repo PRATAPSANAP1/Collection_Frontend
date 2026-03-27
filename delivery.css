@@ -13,30 +13,30 @@ html {
 
 body {
     font-family: 'Poppins', sans-serif;
-    color: #2E2E2E;
-    background: linear-gradient(135deg, #ff8a00, #e52e71);
-    background-attachment: fixed;
+    color: #F5F0E8;
+    background: #0D0D0D;
     line-height: 1.6;
     overflow-x: hidden;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    -webkit-font-smoothing: antialiased;
 }
 
 h1, h2, h3, h4 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    color: #2E2E2E;
+    color: #F5F0E8;
 }
 
 a {
     text-decoration: none;
-    color: #2E2E2E;
+    color: #F5F0E8;
     transition: color 0.3s;
 }
 
 a:hover {
-    color: #FF5722;
+    color: #D4A853;
 }
 
 .btn {
@@ -50,25 +50,25 @@ a:hover {
 }
 
 .btn-primary {
-    background-color: #FF5722;
-    color: #fff;
-    border: 1px solid #FF5722;
+    background: linear-gradient(135deg, #D4A853, #E8C97A, #D4A853);
+    color: #0D0D0D;
+    border: none;
+    border-radius: 50px;
 }
 .btn-primary:hover {
-    background-color: #E64A19;
-    border-color: #E64A19;
+    box-shadow: 0 8px 30px rgba(212, 168, 83, 0.5);
     transform: translateY(-2px);
 }
 
 .btn-secondary {
-    background-color: #E0E5C1;
-    color: #2E2E2E;
-    border: 1px solid #E0E5C1;
+    background: transparent;
+    color: #D4A853;
+    border: 2px solid #D4A853;
+    border-radius: 50px;
 }
 .btn-secondary:hover {
-    background-color: transparent;
-    color: #FF5722;
-    border-color: #FF5722;
+    background: #D4A853;
+    color: #0D0D0D;
     transform: translateY(-2px);
 }
 
@@ -82,18 +82,20 @@ a:hover {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 1.8rem;
-    color: #FF5722;
+    color: #D4A853;
 }
 .logo:hover {
-    color: #757575;
+    color: #E8C97A;
 }
 .logo span {
     display: block;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 0.9rem;
-    font-weight: 700;
-    color: #757575;
-    margin-top: -5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: #B8B0A0;
+    margin-top: -2px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
 }
 
 .container {
@@ -106,7 +108,7 @@ a:hover {
     text-align: center;
     margin-bottom: 40px;
     font-size: 2.5rem;
-    color: #000000;
+    color: #D4A853;
 }
 
 .no-scroll {
@@ -120,12 +122,14 @@ a:hover {
     position: sticky;
     top: 0;
     z-index: 1000;
-    background: #fff;
-    padding: 20px 50px;
+    background: rgba(13, 13, 13, 0.85);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    padding: 16px 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid rgba(212, 168, 83, 0.1);
 }
 
 .nav-icons {
@@ -134,14 +138,14 @@ a:hover {
     gap: 20px;
 }
 .nav-icons .icon {
-    font-size: 1.2rem;
+    font-size: 1.15rem;
     cursor: pointer;
-    color: #2E2E2E;
+    color: #B8B0A0;
     transition: 0.3s ease;
 }
 .nav-icons .icon:hover,
 .nav-icons a.active {
-    color: #FF5722;
+    color: #D4A853;
 }
 
 .nav-menu {
@@ -160,11 +164,11 @@ a:hover {
     font-weight: 700;
     letter-spacing: 1px;
     padding: 8px 12px;
-    color: #2E2E2E;
+    color: #B8B0A0;
     transition: color 0.3s;
 }
 .nav-menu ul li a:hover {
-    color: #FF5722;
+    color: #D4A853;
 }
 
 .toggle-Link {
@@ -191,16 +195,14 @@ a:hover {
     width: 1200px;
     margin: 50px auto;
     padding: 40px 20px;
-    border-radius: 12px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-    background-color: #FDF3EF; /* Matches your order-card background */
+    border-radius: 14px;
 }
 
 .delivery-status-wrapper h2 {
     font-size: 2.2rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    color: #FF5722;
+    color: #D4A853;
     text-align: center;
     margin-bottom: 30px;
 }
@@ -214,16 +216,19 @@ a:hover {
 .delivery-card {
     display: flex;
     align-items: center;
-    background-color: #fff;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(212, 168, 83, 0.15);
+    border-radius: 14px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
     padding: 20px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
 .delivery-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+    border-color: rgba(212, 168, 83, 0.35);
+    box-shadow: 0 12px 40px rgba(212, 168, 83, 0.15);
 }
 
 .product-image img {
@@ -242,15 +247,17 @@ a:hover {
     font-size: 1.2rem;
     font-weight: 600;
     margin: 0 0 10px 0;
-    color: #333;
+    color: #F5F0E8;
 }
 
 .card-header {
     display: flex;
     justify-content: space-between;
     font-size: 0.9rem;
-    color: #777;
+    color: #B8B0A0;
     margin-bottom: 15px;
+    border-bottom: 1px solid rgba(212, 168, 83, 0.15);
+    padding-bottom: 15px;
 }
 
 .card-body p {
@@ -282,7 +289,7 @@ a:hover {
     left: 0;
     width: 100%;
     height: 2px;
-    background-color: #ccc;
+    background: rgba(212, 168, 83, 0.2);
     z-index: 1;
 }
 
@@ -297,12 +304,12 @@ a:hover {
     content: '';
     width: 12px;
     height: 12px;
-    background-color: #ccc;
+    background-color: #111;
     border-radius: 50%;
     display: block;
     margin: 0 auto;
     position: relative;
-    border: 2px solid #fff;
+    border: 2px solid rgba(212, 168, 83, 0.3);
 }
 
 .status-step span {
@@ -311,50 +318,53 @@ a:hover {
     left: 50%;
     transform: translateX(-50%);
     font-size: 0.8rem;
-    color: #777;
+    color: #B8B0A0;
     white-space: nowrap;
 }
 
 /* Active Status Styles - Matching your provided status colors */
 .delivery-status-bar.confirmed::before {
     width: 0;
-    background-color: #FF5722;
+    background-color: #D4A853;
 }
 .delivery-status-bar .status-step.confirmed::before {
-    background-color: #FF5722;
+    background-color: #D4A853;
+    border-color: #D4A853;
 }
 
 .delivery-status-bar .status-step.confirmed span {
-    color: #333;
+    color: #F5F0E8;
 }
 
 .delivery-status-bar.shipped::before {
     width: 33%;
-    background-color: #03A9F4;
+    background-color: #4CAF50;
 }
 .delivery-status-bar.shipped .status-step.confirmed::before,
 .delivery-status-bar.shipped .status-step.shipped::before {
-    background-color: #03A9F4;
+    background-color: #4CAF50;
+    border-color: #4CAF50;
 }
 
 .delivery-status-bar.shipped .status-step.confirmed span,
 .delivery-status-bar.shipped .status-step.shipped span {
-    color: #333;
+    color: #F5F0E8;
 }
 
 .delivery-status-bar.out-for-delivery::before {
     width: 66%;
-    background-color: #FF5722; /* Using primary color for active status */
+    background-color: #D4A853; /* Using primary color for active status */
 }
 .delivery-status-bar.out-for-delivery .status-step.confirmed::before,
 .delivery-status-bar.out-for-delivery .status-step.shipped::before,
 .delivery-status-bar.out-for-delivery .status-step.out-for-delivery::before {
-    background-color: #FF5722;
+    background-color: #D4A853;
+    border-color: #D4A853;
 }
 .delivery-status-bar.out-for-delivery .status-step.confirmed span,
 .delivery-status-bar.out-for-delivery .status-step.shipped span,
 .delivery-status-bar.out-for-delivery .status-step.out-for-delivery span {
-    color: #333;
+    color: #F5F0E8;
 }
 
 .delivery-status-bar.delivered::before {
@@ -363,9 +373,10 @@ a:hover {
 }
 .delivery-status-bar.delivered .status-step::before {
     background-color: #4CAF50;
+    border-color: #4CAF50;
 }
 .delivery-status-bar.delivered .status-step span {
-    color: #333;
+    color: #F5F0E8;
 }
 
 /* =========================================================================
@@ -386,19 +397,21 @@ a:hover {
 }
 
 .modal-content {
-    background-color: #FDF3EF;
+    background: #111;
     margin: auto;
     padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 14px;
+    border: 1px solid rgba(212, 168, 83, 0.2);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
     max-width: 400px;
     width: 90%;
     text-align: center;
     position: relative;
+    color: #F5F0E8;
 }
 
 .close-button {
-    color: #aaa;
+    color: #B8B0A0;
     position: absolute;
     top: 10px;
     right: 15px;
@@ -409,14 +422,14 @@ a:hover {
 
 .close-button:hover,
 .close-button:focus {
-    color: #FF5722;
+    color: #D4A853;
     text-decoration: none;
 }
 
 #modal-message {
     margin: 0;
     font-size: 1.1rem;
-    color: #555;
+    color: #B8B0A0;
 }
 
 
@@ -515,41 +528,39 @@ a:hover {
         text-align: center;
         padding: 15px;
     }
-/* ===== MOBILE FOOTER ===== */
 .mobile-footer {
     display: none; /* hidden by default, visible on mobile */
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
-    background: #fff;
-    border-top: 1px solid #ddd;
-    box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+    background: rgba(13, 13, 13, 0.95);
+    backdrop-filter: blur(20px);
+    border-top: 1px solid rgba(212, 168, 83, 0.15);
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 8px 0;
+    padding: 10px 0 8px;
     z-index: 999;
 }
 .footer-item {
     text-align: center;
-    color: #555;
-    font-size: 0.8rem;
+    color: #8A8278;
+    font-size: 10px;
     flex: 1;
     transition: color 0.3s;
 }
 .footer-item i {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     display: block;
-    margin-bottom: 2px;
+    margin-bottom: 3px;
 }
 .footer-item:hover {
-    color: #FF5722;
+    color: #D4A853;
 }
 .footer-item.active {
-    color: #FF5722; /* selected icon color */
+    color: #D4A853; /* selected icon color */
     font-weight: 600;
-    transform: scale(1.2); /* slightly enlarge selected icon */
 }
 
 @media (max-width: 768px) {
@@ -609,27 +620,25 @@ a:hover {
     transform: scale(1.03);
     transition: all 0.3s ease-in-out;
 }
-/* ========================= */
-/* ===== MOBILE FOOTER ===== */
-/* ========================= */
 .mobile-footer {
     display: none; 
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
-    background: white;
-    border-top: 1px solid #ccc;
+    background: rgba(13, 13, 13, 0.95);
+    backdrop-filter: blur(20px);
+    border-top: 1px solid rgba(212, 168, 83, 0.15);
     justify-content: space-around;
     align-items: center;
-    padding: 8px 0;
+    padding: 10px 0 8px;
     z-index: 1000;
 }
 
 .mobile-footer .footer-item {
-    color: #555;
+    color: #8A8278;
     text-align: center;
-    font-size: 12px;
+    font-size: 10px;
     flex: 1;
     text-decoration: none;
 }
@@ -643,11 +652,11 @@ a:hover {
 
 .mobile-footer .footer-item.active,
 .mobile-footer .footer-item:hover {
-    color: #FF5722; 
+    color: #D4A853; 
 }
 
 .footer-item.active i {
-    color: #FF5722; 
+    color: #D4A853; 
 }
 
 

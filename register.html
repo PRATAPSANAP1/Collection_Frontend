@@ -5,13 +5,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login & Registration - Shubhangi Collection</title>
+  <title>Login & Registration — Shubhangi Collection</title>
+  <meta name="description" content="Sign in or create an account at Shubhangi Collection to shop elegant jewelry and accessories.">
+  <meta name="theme-color" content="#0D0D0D">
   <!-- START: External Fonts and Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;500;600&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap"
     rel="stylesheet">
   <!-- END: External Fonts and Icons -->
   <!-- START: External CSS -->
@@ -30,19 +32,19 @@
       <nav id="nav-menu" class="nav-menu">
         <ul>
           <li><a href="/">Home</a></li>
-          <li><a href="https://collection-backend-pq2f.onrender.com/collection">Collection</a></li>
-          <li><a href="https://collection-backend-pq2f.onrender.com/booking">Beauty Parlour</a></li>
-          <li><a href="https://collection-backend-pq2f.onrender.com/api/user/order">Orders</a></li>
-          <li><a href="https://collection-backend-pq2f.onrender.com/contact">Contact</a></li>
+          <li><a href="https://shubhangi-collection-backend.onrender.com/collection">Collection</a></li>
+          <li><a href="https://shubhangi-collection-backend.onrender.com/booking">Beauty Parlour</a></li>
+          <li><a href="https://shubhangi-collection-backend.onrender.com/api/user/order">Orders</a></li>
+          <li><a href="https://shubhangi-collection-backend.onrender.com/contact">Contact</a></li>
         </ul>
       </nav>
     </div>
 
     <div class="header-right">
       <div class="nav-icons">
-        <a href="https://collection-backend-pq2f.onrender.com/api/user/wishlist" class="icon wishlist-icon"><i
+        <a href="https://shubhangi-collection-backend.onrender.com/api/user/wishlist" class="icon wishlist-icon"><i
             class="fas fa-heart"></i></a>
-        <a href="https://collection-backend-pq2f.onrender.com/api/user/cart" class="icon cart-icon"><i
+        <a href="https://shubhangi-collection-backend.onrender.com/api/user/cart" class="icon cart-icon"><i
             class="fas fa-shopping-bag"></i></a>
       </div>
     </div>
@@ -176,11 +178,11 @@
       popup.querySelector(".popup-btn").addEventListener("click", () => {
         popup.remove();
         if (message === "Login successfully" || message === "User registered successfully") {
-          window.location.href = "https://shubhangi-collections01.vercel.app/collection.html";
+          window.location.href = "https://shubhangi-collection.vercel.app/collection.html";
         } else if (message === "Login successfully ") {
-          window.location.href = "https://collection-backend-pq2f.onrender.com/admin";
+          window.location.href = "https://shubhangi-collection-backend.onrender.com/admin";
         } else if (message === "Delivery Login successfully") {   // <- add case
-          window.location.href = "https://collection-backend-pq2f.onrender.com/d_boy.html";
+          window.location.href = "https://shubhangi-collection-backend.onrender.com/d_boy.html";
         }
 
 
